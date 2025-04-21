@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+
+<html>
+
+  <head utf>
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <img class="fon" src="/img/fon.jpg" alt="Фон">
+
+
+    <p class="main-name"> Калькулятор IP адресов </p>
+
+    <div class="vibor">
+      <a href="index.html" class="active">Без наложения</a>
+      <pre> \ </pre>
+      <a href="overlay.html">С наложением</a>
+    </div>
+
+
+
+
+    <div class="calc">
+      
+      <div class="one">
+        <div class="inputs">
+          <input class="IP" type="text" id="ipInput" placeholder="xxx.xxx.xxx.xxx">
+          <!-- <input class="mask" type="text" id="maskInput" placeholder="/xx"> -->
+        </div>
+
+        <form class="spisok"> 
+          <label for="address">Выберите опцию:</label>
+  
+          <select id="vibor" name="vibor">
+            <option value="">--</option>
+            <option value="ipaddress">Определение диапазона IP аддресса</option>
+            <option value="knot">Определение номера узла</option>
+            <option value="net">Определение номера сети</option>
+          </select>
+        </form>
+      </div>
+
+
+      <div class="two">
+        <button class="yes" id="yes"> Выполнить </button>
+        <button class="no" id="no"> Сбросить </button>
+      </div>
+
+
+    </div>
+
+
+    <div class="answer" id="answer"> 
+    </div>
+    
+    <div class="expl" id="expl">
+    </div>
+
+    <script src="js/index.js"></script>
+
+
+
+
+  </body>
+
+
+
+
+</html>
